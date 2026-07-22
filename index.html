@@ -8,367 +8,366 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2685.6">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
     span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p2"><span class="s1">&lt;html lang="en" class="scroll-smooth"&gt;</span></p>
-<p class="p2"><span class="s1">&lt;head&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Insight Aerial Solutions | Enterprise Geospatial Intelligence&lt;/title&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="description" content="High-precision orthomosaic mapping, 3D spatial analytics, and site progress monitoring for enterprise B2B sectors."&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Scripts &amp; Styles --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"&gt;&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/lucide@latest"&gt;&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>tailwind.config = {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>theme: {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>extend: {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>colors: {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>brand: {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>dark: '#0B132B',</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>navy: '#1C2541',</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>cyan: '#00B4D8',</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>teal: '#00F5D4',</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>light: '#F8F9FA',</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>charcoal: '#2B2D42'</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>},</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>fontFamily: { sans: ['Inter', 'sans-serif'] }</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>[x-cloak] { display: none !important; }</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>.glass-panel { background: rgba(28, 37, 65, 0.95); backdrop-filter: blur(10px); }</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>.data-grid { background-image: radial-gradient(#00B4D8 0.5px, transparent 0.5px); background-size: 24px 24px; }</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>input:focus { outline: 2px solid #00B4D8; outline-offset: 1px; }</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p2"><span class="s1">&lt;body x-data="app()" class="bg-brand-light text-brand-charcoal font-sans overflow-x-hidden"&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- NAVIGATION --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav class="fixed w-full z-50 glass-panel border-b border-white/10 text-white"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex justify-between h-20 items-center"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;!-- Logo: Clears Hash &amp; Resets View --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="flex items-center space-x-2 cursor-pointer" @click="resetToHome()"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="w-10 h-10 bg-brand-cyan rounded flex items-center justify-center"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;i data-lucide="layers" class="text-brand-dark"&gt;&lt;/i&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="text-xl font-bold tracking-tighter uppercase"&gt;Insight &lt;span class="text-brand-cyan"&gt;Aerial&lt;/span&gt;&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="hidden md:flex space-x-8 items-center font-medium text-sm tracking-wide"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="#solutions" class="hover:text-brand-cyan transition"&gt;SOLUTIONS&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="#estimator" class="hover:text-brand-cyan transition"&gt;ESTIMATOR&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="#case-studies" class="hover:text-brand-cyan transition"&gt;CASE STUDIES&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button @click="showContactModal = true" class="bg-brand-cyan hover:bg-brand-teal text-brand-dark px-6 py-2 rounded-sm font-bold transition"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>REQUEST DATA SPEC</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Lock Icon: Triggers Auth Logic --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button @click="checkAuth()" class="text-white/50 hover:text-white transition p-2"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;i data-lucide="lock" class="w-4 h-4"&gt;&lt;/i&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- ADMIN LOGIN MODAL --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div x-show="showLoginModal" x-cloak class="fixed inset-0 z-[200] flex items-center justify-center p-4"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div @click="closeLogin()" class="absolute inset-0 bg-brand-dark/95 backdrop-blur-md"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="relative bg-white w-full max-w-sm rounded-xl shadow-2xl p-8 text-center" @click.away="closeLogin()"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="w-16 h-16 bg-brand-cyan/10 rounded-full flex items-center justify-center mx-auto mb-6"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i data-lucide="shield-check" class="text-brand-cyan w-8 h-8"&gt;&lt;/i&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-2xl font-bold text-brand-dark mb-2"&gt;Admin Access&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-500 text-sm mb-6"&gt;Enter system credentials to proceed.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;form @submit.prevent="handleLogin()"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="password" x-model="loginPass" placeholder="Enter Password" class="w-full p-4 border border-gray-200 rounded-lg mb-4 text-center text-lg tracking-widest font-bold"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div x-show="loginError" x-transition class="text-red-500 text-xs mb-4"&gt;Incorrect password. Please try again.&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button type="submit" class="w-full bg-brand-dark text-white py-4 rounded-lg font-bold hover:bg-brand-navy transition"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>Authenticate System</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/form&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button @click="closeLogin()" class="mt-4 text-gray-400 text-xs hover:underline uppercase tracking-widest"&gt;Cancel&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- MAIN CONTENT AREA --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main x-show="view === 'home'" x-cloak x-transition.opacity&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- HERO SECTION --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section class="relative h-screen flex items-center bg-brand-dark text-white pt-20 overflow-hidden"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="absolute inset-0 opacity-20 data-grid"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="inline-block px-3 py-1 border border-brand-cyan text-brand-cyan text-xs font-bold mb-6 tracking-widest uppercase"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>Enterprise Geospatial Intelligence</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>Aerial Data into &lt;span class="text-brand-cyan italic"&gt;Intelligence.&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/h1&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-lg text-gray-400 mb-10 max-w-lg leading-relaxed"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>High-precision orthomosaic mapping, 3D spatial analytics, and site progress monitoring.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;a href="#estimator" class="bg-brand-cyan text-brand-dark px-8 py-4 rounded-sm font-bold text-center hover:bg-brand-teal transition shadow-lg shadow-brand-cyan/20 uppercase tracking-tighter"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>Open Estimator</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button @click="showContactModal = true" class="border border-white/20 px-8 py-4 rounded-sm font-bold hover:bg-white/10 transition text-center uppercase tracking-tighter"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>Sample Datasets</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- STATS --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section class="bg-brand-navy py-12 border-y border-white/10"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div x-for="stat in stats"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-brand-cyan font-bold text-3xl mb-1" x-text="stat.val"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-gray-400 text-xs uppercase tracking-widest" x-text="stat.label"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- SOLUTIONS GRID --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="solutions" class="py-24 bg-white"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-7xl mx-auto px-4"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="text-center mb-16"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-3xl md:text-5xl font-bold mb-4"&gt;Core Deliverables&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-500 max-w-2xl mx-auto"&gt;Survey-grade geospatial layers for site managers and civil engineers.&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;template x-for="service in services" :key="service.id"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="p-8 border border-gray-100 hover:border-brand-cyan transition-all group"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="w-12 h-12 bg-gray-50 flex items-center justify-center rounded mb-6 group-hover:bg-brand-cyan/10"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;i :data-lucide="service.icon" class="text-brand-navy group-hover:text-brand-cyan"&gt;&lt;/i&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-xl font-bold mb-3" x-text="service.title"&gt;&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-500 text-sm mb-6" x-text="service.desc"&gt;&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/template&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- ESTIMATOR --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="estimator" class="py-24 bg-brand-light"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-4xl mx-auto px-4"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl border border-gray-200"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div x-show="estStep === 1"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h2 class="text-2xl font-bold mb-6"&gt;Select Industry Sector&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="grid grid-cols-2 gap-4"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;template x-for="ind in industries"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button @click="estData.industry = ind; estStep = 2" class="p-4 border border-gray-200 rounded text-left hover:bg-brand-dark hover:text-white transition" x-text="ind"&gt;&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/template&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div x-show="estStep === 2" x-cloak&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h2 class="text-2xl font-bold mb-6"&gt;Select Output&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="grid grid-cols-1 gap-3"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;template x-for="output in outputs"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button @click="estData.output = output; estStep = 3" class="p-4 border border-gray-200 rounded text-left hover:bg-brand-cyan transition font-medium" x-text="output"&gt;&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/template&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div x-show="estStep === 3" x-cloak&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;form @submit.prevent="submitEstimator()" class="space-y-4 text-center"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="mb-4 text-sm"&gt;Selected: &lt;b x-text="estData.industry"&gt;&lt;/b&gt; / &lt;b x-text="estData.output"&gt;&lt;/b&gt;&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;input type="email" placeholder="Work Email" required x-model="estData.email" class="w-full p-4 border border-gray-200 rounded"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button class="w-full bg-brand-dark text-white p-4 rounded font-bold uppercase tracking-widest"&gt;Get Technical Spec Sheet&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/form&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- ADMIN DASHBOARD (State Protected) --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div x-show="view === 'admin' &amp;&amp; isLoggedIn" x-cloak class="min-h-screen bg-gray-100"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="bg-brand-dark text-white p-6 flex justify-between items-center shadow-lg"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-xl font-bold flex items-center"&gt;&lt;i data-lucide="layout-dashboard" class="mr-3 text-brand-cyan"&gt;&lt;/i&gt; INSIGHT_CMS v1.0&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center space-x-6"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="text-xs text-brand-cyan font-mono animate-pulse"&gt;● SYSTEM SECURE&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button @click="resetToHome()" class="bg-white/10 hover:bg-red-500/20 hover:text-red-400 px-4 py-2 rounded text-xs font-bold transition"&gt;EXIT DASHBOARD&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto p-8 grid md:grid-cols-4 gap-8"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;aside class="space-y-2"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button @click="adminTab = 'leads'" :class="adminTab === 'leads' ? 'bg-brand-cyan text-brand-dark' : 'bg-white'" class="w-full p-4 rounded-lg shadow-sm font-bold text-left flex justify-between items-center transition"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>Lead Captures &lt;i data-lucide="users" class="w-4 h-4"&gt;&lt;/i&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button @click="adminTab = 'services'" :class="adminTab === 'services' ? 'bg-brand-cyan text-brand-dark' : 'bg-white'" class="w-full p-4 rounded-lg shadow-sm font-bold text-left flex justify-between items-center transition"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>Deliverables &lt;i data-lucide="edit-3" class="w-4 h-4"&gt;&lt;/i&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/aside&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;section class="md:col-span-3 bg-white rounded-xl shadow-sm p-8 min-h-[600px]"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div x-show="adminTab === 'leads'"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-6"&gt;Inquiry Log&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="overflow-x-auto"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;table class="w-full text-left"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;thead class="border-b text-gray-400 text-xs uppercase tracking-widest"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;tr&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;th class="pb-4"&gt;Timestamp&lt;/th&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;th class="pb-4"&gt;Contact&lt;/th&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;th class="pb-4"&gt;Request Type&lt;/th&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;th class="pb-4"&gt;Action&lt;/th&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/tr&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/thead&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;tbody class="text-sm"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;template x-for="lead in leadLog"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;tr class="border-b hover:bg-gray-50"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;td class="py-4 text-gray-500" x-text="new Date(lead.date).toLocaleDateString()"&gt;&lt;/td&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;td class="py-4 font-bold" x-text="lead.email"&gt;&lt;/td&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;td class="py-4"&gt;&lt;span class="bg-brand-cyan/10 text-brand-dark px-2 py-1 rounded text-xs font-bold" x-text="lead.output"&gt;&lt;/span&gt;&lt;/td&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;td class="py-4"&gt;&lt;button class="text-brand-cyan hover:underline"&gt;View Spec&lt;/button&gt;&lt;/td&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/tr&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/template&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/tbody&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/table&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div x-show="adminTab === 'services'"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-6"&gt;Service Definitions&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-3"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;template x-for="(s, index) in services" :key="s.id"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="p-4 border rounded-lg flex items-center justify-between group hover:border-brand-cyan transition"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;span class="font-bold block text-brand-dark" x-text="s.title"&gt;&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;span class="text-gray-400 text-xs" x-text="s.desc"&gt;&lt;/span&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button @click="services.splice(index, 1)" class="text-red-300 hover:text-red-600 transition p-2"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;i data-lucide="trash-2" class="w-4 h-4"&gt;&lt;/i&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/template&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- GLOBAL FOOTER --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-brand-dark text-white py-12 border-t border-white/5"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-4 text-center"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-xs text-gray-600 uppercase tracking-widest mb-4"&gt;&amp;copy; 2024 Insight Aerial Solutions. FAA Part 107 Operations.&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>function app() {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>return {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>view: 'home',</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>adminTab: 'leads',</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>isLoggedIn: false,</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>showLoginModal: false,</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>loginPass: '',</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>loginError: false,</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>showContactModal: false,</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>estStep: 1,</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>stats: [</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>{ label: 'Map Accuracy', val: '&lt; 1.5cm' },</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>{ label: 'Deliveries', val: '2,400+' },</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>{ label: 'FAA Compliant', val: '100%' },</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>{ label: 'Security Grade', val: 'AES-256' }</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>],</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>industries: ['Civil Engineering', 'Energy &amp; Utilities', 'Commercial Construction', 'Precision Agriculture'],</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>outputs: ['2D Orthomosaic', 'Volumetric Analytics', '3D Textured Mesh', 'Thermal Inspection'],</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>estData: { email: '', industry: '', output: '' },</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>services: [</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>{ id: 1, icon: 'map', title: 'Orthomosaic Mapping', desc: 'Survey-grade 2D maps for site planning and measurements.' },</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>{ id: 2, icon: 'box', title: 'Volumetric Analytics', desc: 'Precision calculations for excavation and stockpiles.' },</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>{ id: 3, icon: 'clock', title: 'Progress Monitoring', desc: 'Temporal analysis of site developments over time.' },</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>{ id: 4, icon: 'shield-check', title: 'Asset Inspection', desc: 'High-res visual and thermal data for infrastructure.' }</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>],</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>leadLog: JSON.parse(localStorage.getItem('ias_leads') || '[]'),</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>init() {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>lucide.createIcons();</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>// Initial check for hash on page load</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>this.handleHash();</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>// Listener for URL changes</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>window.addEventListener('hashchange', () =&gt; this.handleHash());</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>handleHash() {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>const hash = window.location.hash;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>if (hash === '#admin') {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.checkAuth();</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>} else {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.view = 'home';</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.showLoginModal = false;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>this.$nextTick(() =&gt; lucide.createIcons());</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>checkAuth() {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>if (this.isLoggedIn) {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.view = 'admin';</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>window.location.hash = 'admin';</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>} else {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.showLoginModal = true;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>handleLogin() {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>if (this.loginPass === 'admin123') {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.isLoggedIn = true;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.loginError = false;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.showLoginModal = false;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.view = 'admin';</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.loginPass = '';</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>window.location.hash = 'admin';</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>} else {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.loginError = true;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.loginPass = '';</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>closeLogin() {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>this.showLoginModal = false;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>this.loginError = false;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>this.loginPass = '';</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>if (!this.isLoggedIn) {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span>this.resetToHome();</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>resetToHome() {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>this.view = 'home';</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>// Clears hash without page jump</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>history.pushState("", document.title, window.location.pathname + window.location.search);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>this.$nextTick(() =&gt; lucide.createIcons());</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>submitEstimator() {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>this.leadLog.push({...this.estData, date: new Date().toISOString()});</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>localStorage.setItem('ias_leads', JSON.stringify(this.leadLog));</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>alert('Success! Your data spec request has been logged.');</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>this.estStep = 1;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span>this.estData = { email: '', industry: '', output: '' };</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en" class="scroll-smooth"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Insight Aerial Solutions | Enterprise Geospatial Intelligence&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="description" content="High-precision orthomosaic mapping, 3D spatial analytics, and site progress monitoring for enterprise B2B sectors."&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Scripts &amp; Styles --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/lucide@latest"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>tailwind.config = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>theme: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>extend: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>colors: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>brand: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>dark: '#0B132B',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>navy: '#1C2541',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>cyan: '#00B4D8',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>teal: '#00F5D4',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>light: '#F8F9FA',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>charcoal: '#2B2D42'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>fontFamily: { sans: ['Inter', 'sans-serif'] }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>[x-cloak] { display: none !important; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.glass-panel { background: rgba(28, 37, 65, 0.95); backdrop-filter: blur(10px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.data-grid { background-image: radial-gradient(#00B4D8 0.5px, transparent 0.5px); background-size: 24px 24px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>input:focus { outline: 2px solid #00B4D8; outline-offset: 1px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body x-data="app()" class="bg-brand-light text-brand-charcoal font-sans overflow-x-hidden"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- NAVIGATION --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav class="fixed w-full z-50 glass-panel border-b border-white/10 text-white"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex justify-between h-20 items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;!-- Logo: Clears Hash &amp; Resets View --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="flex items-center space-x-2 cursor-pointer" @click="resetToHome()"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="w-10 h-10 bg-brand-cyan rounded flex items-center justify-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;i data-lucide="layers" class="text-brand-dark"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="text-xl font-bold tracking-tighter uppercase"&gt;Insight &lt;span class="text-brand-cyan"&gt;Aerial&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="hidden md:flex space-x-8 items-center font-medium text-sm tracking-wide"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="#solutions" class="hover:text-brand-cyan transition"&gt;SOLUTIONS&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="#estimator" class="hover:text-brand-cyan transition"&gt;ESTIMATOR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="#case-studies" class="hover:text-brand-cyan transition"&gt;CASE STUDIES&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button @click="showContactModal = true" class="bg-brand-cyan hover:bg-brand-teal text-brand-dark px-6 py-2 rounded-sm font-bold transition"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>REQUEST DATA SPEC</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Lock Icon: Triggers Auth Logic --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button @click="checkAuth()" class="text-white/50 hover:text-white transition p-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;i data-lucide="lock" class="w-4 h-4"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- ADMIN LOGIN MODAL --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div x-show="showLoginModal" x-cloak class="fixed inset-0 z-[200] flex items-center justify-center p-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div @click="closeLogin()" class="absolute inset-0 bg-brand-dark/95 backdrop-blur-md"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="relative bg-white w-full max-w-sm rounded-xl shadow-2xl p-8 text-center" @click.away="closeLogin()"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="w-16 h-16 bg-brand-cyan/10 rounded-full flex items-center justify-center mx-auto mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i data-lucide="shield-check" class="text-brand-cyan w-8 h-8"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-2xl font-bold text-brand-dark mb-2"&gt;Admin Access&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-500 text-sm mb-6"&gt;Enter system credentials to proceed.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;form @submit.prevent="handleLogin()"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="password" x-model="loginPass" placeholder="Enter Password" class="w-full p-4 border border-gray-200 rounded-lg mb-4 text-center text-lg tracking-widest font-bold"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div x-show="loginError" x-transition class="text-red-500 text-xs mb-4"&gt;Incorrect password. Please try again.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button type="submit" class="w-full bg-brand-dark text-white py-4 rounded-lg font-bold hover:bg-brand-navy transition"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>Authenticate System</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/form&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button @click="closeLogin()" class="mt-4 text-gray-400 text-xs hover:underline uppercase tracking-widest"&gt;Cancel&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- MAIN CONTENT AREA --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main x-show="view === 'home'" x-cloak x-transition.opacity&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- HERO SECTION --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section class="relative h-screen flex items-center bg-brand-dark text-white pt-20 overflow-hidden"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="absolute inset-0 opacity-20 data-grid"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="inline-block px-3 py-1 border border-brand-cyan text-brand-cyan text-xs font-bold mb-6 tracking-widest uppercase"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>Enterprise Geospatial Intelligence</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>Aerial Data into &lt;span class="text-brand-cyan italic"&gt;Intelligence.&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-lg text-gray-400 mb-10 max-w-lg leading-relaxed"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>High-precision orthomosaic mapping, 3D spatial analytics, and site progress monitoring.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;a href="#estimator" class="bg-brand-cyan text-brand-dark px-8 py-4 rounded-sm font-bold text-center hover:bg-brand-teal transition shadow-lg shadow-brand-cyan/20 uppercase tracking-tighter"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>Open Estimator</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button @click="showContactModal = true" class="border border-white/20 px-8 py-4 rounded-sm font-bold hover:bg-white/10 transition text-center uppercase tracking-tighter"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>Sample Datasets</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- STATS --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section class="bg-brand-navy py-12 border-y border-white/10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div x-for="stat in stats"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-brand-cyan font-bold text-3xl mb-1" x-text="stat.val"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-gray-400 text-xs uppercase tracking-widest" x-text="stat.label"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- SOLUTIONS GRID --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="solutions" class="py-24 bg-white"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-7xl mx-auto px-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="text-center mb-16"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-3xl md:text-5xl font-bold mb-4"&gt;Core Deliverables&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-500 max-w-2xl mx-auto"&gt;Survey-grade geospatial layers for site managers and civil engineers.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;template x-for="service in services" :key="service.id"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="p-8 border border-gray-100 hover:border-brand-cyan transition-all group"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="w-12 h-12 bg-gray-50 flex items-center justify-center rounded mb-6 group-hover:bg-brand-cyan/10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;i :data-lucide="service.icon" class="text-brand-navy group-hover:text-brand-cyan"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-xl font-bold mb-3" x-text="service.title"&gt;&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-500 text-sm mb-6" x-text="service.desc"&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/template&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- ESTIMATOR --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="estimator" class="py-24 bg-brand-light"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-4xl mx-auto px-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl border border-gray-200"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div x-show="estStep === 1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h2 class="text-2xl font-bold mb-6"&gt;Select Industry Sector&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="grid grid-cols-2 gap-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;template x-for="ind in industries"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button @click="estData.industry = ind; estStep = 2" class="p-4 border border-gray-200 rounded text-left hover:bg-brand-dark hover:text-white transition" x-text="ind"&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/template&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div x-show="estStep === 2" x-cloak&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h2 class="text-2xl font-bold mb-6"&gt;Select Output&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="grid grid-cols-1 gap-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;template x-for="output in outputs"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button @click="estData.output = output; estStep = 3" class="p-4 border border-gray-200 rounded text-left hover:bg-brand-cyan transition font-medium" x-text="output"&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/template&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div x-show="estStep === 3" x-cloak&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;form @submit.prevent="submitEstimator()" class="space-y-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="mb-4 text-sm"&gt;Selected: &lt;b x-text="estData.industry"&gt;&lt;/b&gt; / &lt;b x-text="estData.output"&gt;&lt;/b&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;input type="email" placeholder="Work Email" required x-model="estData.email" class="w-full p-4 border border-gray-200 rounded"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button class="w-full bg-brand-dark text-white p-4 rounded font-bold uppercase tracking-widest"&gt;Get Technical Spec Sheet&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/form&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- ADMIN DASHBOARD (State Protected) --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div x-show="view === 'admin' &amp;&amp; isLoggedIn" x-cloak class="min-h-screen bg-gray-100"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="bg-brand-dark text-white p-6 flex justify-between items-center shadow-lg"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-xl font-bold flex items-center"&gt;&lt;i data-lucide="layout-dashboard" class="mr-3 text-brand-cyan"&gt;&lt;/i&gt; INSIGHT_CMS v1.0&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center space-x-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="text-xs text-brand-cyan font-mono animate-pulse"&gt;● SYSTEM SECURE&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button @click="resetToHome()" class="bg-white/10 hover:bg-red-500/20 hover:text-red-400 px-4 py-2 rounded text-xs font-bold transition"&gt;EXIT DASHBOARD&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto p-8 grid md:grid-cols-4 gap-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;aside class="space-y-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button @click="adminTab = 'leads'" :class="adminTab === 'leads' ? 'bg-brand-cyan text-brand-dark' : 'bg-white'" class="w-full p-4 rounded-lg shadow-sm font-bold text-left flex justify-between items-center transition"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>Lead Captures &lt;i data-lucide="users" class="w-4 h-4"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button @click="adminTab = 'services'" :class="adminTab === 'services' ? 'bg-brand-cyan text-brand-dark' : 'bg-white'" class="w-full p-4 rounded-lg shadow-sm font-bold text-left flex justify-between items-center transition"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>Deliverables &lt;i data-lucide="edit-3" class="w-4 h-4"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/aside&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;section class="md:col-span-3 bg-white rounded-xl shadow-sm p-8 min-h-[600px]"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div x-show="adminTab === 'leads'"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-6"&gt;Inquiry Log&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="overflow-x-auto"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;table class="w-full text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;thead class="border-b text-gray-400 text-xs uppercase tracking-widest"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;tr&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;th class="pb-4"&gt;Timestamp&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;th class="pb-4"&gt;Contact&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;th class="pb-4"&gt;Request Type&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;th class="pb-4"&gt;Action&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/thead&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;tbody class="text-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;template x-for="lead in leadLog"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;tr class="border-b hover:bg-gray-50"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;td class="py-4 text-gray-500" x-text="new Date(lead.date).toLocaleDateString()"&gt;&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;td class="py-4 font-bold" x-text="lead.email"&gt;&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;td class="py-4"&gt;&lt;span class="bg-brand-cyan/10 text-brand-dark px-2 py-1 rounded text-xs font-bold" x-text="lead.output"&gt;&lt;/span&gt;&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;td class="py-4"&gt;&lt;button class="text-brand-cyan hover:underline"&gt;View Spec&lt;/button&gt;&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/template&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/tbody&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/table&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div x-show="adminTab === 'services'"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-6"&gt;Service Definitions&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;template x-for="(s, index) in services" :key="s.id"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="p-4 border rounded-lg flex items-center justify-between group hover:border-brand-cyan transition"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;span class="font-bold block text-brand-dark" x-text="s.title"&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;span class="text-gray-400 text-xs" x-text="s.desc"&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button @click="services.splice(index, 1)" class="text-red-300 hover:text-red-600 transition p-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;i data-lucide="trash-2" class="w-4 h-4"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/template&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- GLOBAL FOOTER --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-brand-dark text-white py-12 border-t border-white/5"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-xs text-gray-600 uppercase tracking-widest mb-4"&gt;&amp;copy; 2024 Insight Aerial Solutions. FAA Part 107 Operations.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function app() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>view: 'home',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>adminTab: 'leads',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isLoggedIn: false,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>showLoginModal: false,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>loginPass: '',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>loginError: false,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>showContactModal: false,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>estStep: 1,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>stats: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ label: 'Map Accuracy', val: '&lt; 1.5cm' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ label: 'Deliveries', val: '2,400+' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ label: 'FAA Compliant', val: '100%' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ label: 'Security Grade', val: 'AES-256' }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>industries: ['Civil Engineering', 'Energy &amp; Utilities', 'Commercial Construction', 'Precision Agriculture'],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>outputs: ['2D Orthomosaic', 'Volumetric Analytics', '3D Textured Mesh', 'Thermal Inspection'],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>estData: { email: '', industry: '', output: '' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>services: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ id: 1, icon: 'map', title: 'Orthomosaic Mapping', desc: 'Survey-grade 2D maps for site planning and measurements.' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ id: 2, icon: 'box', title: 'Volumetric Analytics', desc: 'Precision calculations for excavation and stockpiles.' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ id: 3, icon: 'clock', title: 'Progress Monitoring', desc: 'Temporal analysis of site developments over time.' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ id: 4, icon: 'shield-check', title: 'Asset Inspection', desc: 'High-res visual and thermal data for infrastructure.' }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>leadLog: JSON.parse(localStorage.getItem('ias_leads') || '[]'),</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>init() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>lucide.createIcons();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// Initial check for hash on page load</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>this.handleHash();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// Listener for URL changes</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>window.addEventListener('hashchange', () =&gt; this.handleHash());</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>handleHash() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>const hash = window.location.hash;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (hash === '#admin') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.checkAuth();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.view = 'home';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.showLoginModal = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>this.$nextTick(() =&gt; lucide.createIcons());</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>checkAuth() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (this.isLoggedIn) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.view = 'admin';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>window.location.hash = 'admin';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.showLoginModal = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>handleLogin() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (this.loginPass === 'admin123') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.isLoggedIn = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.loginError = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.showLoginModal = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.view = 'admin';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.loginPass = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>window.location.hash = 'admin';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.loginError = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.loginPass = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>closeLogin() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>this.showLoginModal = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>this.loginError = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>this.loginPass = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (!this.isLoggedIn) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>this.resetToHome();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>resetToHome() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>this.view = 'home';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// Clears hash without page jump</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>history.pushState("", document.title, window.location.pathname + window.location.search);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>this.$nextTick(() =&gt; lucide.createIcons());</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>submitEstimator() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>this.leadLog.push({...this.estData, date: new Date().toISOString()});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>localStorage.setItem('ias_leads', JSON.stringify(this.leadLog));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>alert('Success! Your data spec request has been logged.');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>this.estStep = 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>this.estData = { email: '', industry: '', output: '' };</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
 </html>
