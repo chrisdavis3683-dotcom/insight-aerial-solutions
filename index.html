@@ -450,9 +450,9 @@
                 { id: 1, title: 'Thermal Imaging & Radiometrics', desc: 'Targeted radiometric thermal detection for ethical game recovery, livestock surveys, roof moisture intrusion, and utility diagnostics.', icon: 'Flame' },
                 { id: 2, title: '2D Orthomosaic Mapping', desc: 'High-resolution stitched orthomosaic maps with high-resolution georeferenced spatial accuracy for construction & land analysis.', icon: 'Map' },
                 { id: 3, title: '3D Mesh & Point Clouds', desc: 'Detailed volumetric 3D models and point cloud data ready for CAD, BIM, and spatial inspections.', icon: 'Box' },
-                { id: 4, title: 'Infrastructure & Asset Inspection', desc: 'High-resolution optical audits of commercial roofing, exterior envelopes, and facility assets to pinpoint defects without ladders or scaffolding.', icon: 'ClipboardCheck' },
+                { id: 4, title: 'Infrastructure & Asset Inspection', desc: 'High-resolution optical audits of commercial roofing, exterior envelopes, and facility assets to pinpoint defects without ladders or scaffolding.', icon: 'Search' },
                 { id: 5, title: 'Weekly Progress Monitoring', desc: 'High-frequency aerial tracking and orthomosaic updates designed for project managers, lenders, and investors.', icon: 'Camera' },
-                { id: 6, title: 'Autonomous Flight Planning', desc: 'Precision grid mapping, waypoint trajectory design, and custom terrain-following mission plans.', icon: 'Compass' }
+                { id: 6, title: 'Site Condition & Damage Documentation', desc: 'Baseline pre-construction visual records, boundary verification, and rapid-response aerial audits for insurance claims and post-storm damage.', icon: 'Shield' }
             ];
 
             return {
@@ -474,7 +474,7 @@
                 },
 
                 initApp() {
-                    const saved = localStorage.getItem('ias_services_v3');
+                    const saved = localStorage.getItem('ias_services_v4');
                     if (saved) {
                         try {
                             this.services = JSON.parse(saved);
@@ -588,7 +588,7 @@
                 },
 
                 saveStorage() {
-                    localStorage.setItem('ias_services_v3', JSON.stringify(this.services));
+                    localStorage.setItem('ias_services_v4', JSON.stringify(this.services));
                 },
 
                 submitContactForm() {
