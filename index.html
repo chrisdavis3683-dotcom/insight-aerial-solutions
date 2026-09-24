@@ -44,27 +44,41 @@
     </form>
 
     <!-- Navigation Header -->
-    <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center space-x-3 cursor-pointer" @click="goToHome()">
-                <div class="p-2 bg-brand-600 rounded-lg text-white">
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" @click.prevent="goToHome()" class="flex items-center gap-3 group">
+                <!-- Branded Logo Graphic -->
+                <img src="assets/logo-insight-aerial.png" 
+                     alt="Insight Aerial Solutions Logo" 
+                     class="h-10 sm:h-12 w-auto object-contain transition group-hover:opacity-90"
+                     onerror="this.style.display='none'; document.getElementById('logo-fallback-icon').style.display='flex';">
+                
+                <!-- Fallback Icon if Image File Is Missing -->
+                <div id="logo-fallback-icon" class="hidden p-2 bg-brand-600 rounded-lg text-white">
                     <i data-lucide="plane" class="w-6 h-6"></i>
                 </div>
-                <span class="text-xl font-bold tracking-tight text-white">Insight Aerial <span class="text-brand-500">Solutions</span></span>
-            </div>
+
+                <div class="flex flex-col">
+                    <span class="text-lg sm:text-xl font-bold tracking-tight text-white uppercase leading-none">
+                        Insight Aerial <span class="text-brand-500">Solutions</span>
+                    </span>
+                    <span class="text-[10px] tracking-widest text-slate-400 uppercase mt-1">Spatial Intelligence & Aerial Media</span>
+                </div>
+            </a>
             
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
                 <a href="#services" @click="goToHome()" class="hover:text-brand-500 transition">Services</a>
+                <a href="#about" @click="goToHome()" class="hover:text-brand-500 transition">About</a>
                 <a href="#contact" @click="goToHome()" class="hover:text-brand-500 transition">Contact</a>
             </nav>
 
             <div class="flex items-center space-x-4">
                 <button @click="toggleAdmin()" 
-                        class="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition" 
+                        class="p-2 text-slate-500 hover:text-white hover:bg-slate-800 rounded-lg transition" 
                         title="Admin Portal">
-                    <i data-lucide="lock" class="w-5 h-5"></i>
+                    <i data-lucide="lock" class="w-4 h-4"></i>
                 </button>
-                <a href="#contact" @click="goToHome()" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
+                <a href="#contact" @click="goToHome()" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2.5 rounded-lg text-sm font-semibold transition shadow-md shadow-brand-900/30">
                     Request Quote
                 </a>
             </div>
@@ -76,9 +90,9 @@
         <!-- Hero Section -->
         <section class="relative py-24 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                <div class="inline-flex items-center space-x-2 bg-brand-500/10 border border-brand-500/20 text-brand-500 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+                <div class="inline-flex items-center space-x-2 bg-brand-500/10 border border-brand-500/20 text-brand-500 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
                     <i data-lucide="shield-check" class="w-4 h-4"></i>
-                    <span>FAA Part 107 Certified Pilot</span>
+                    <span>FAA Part 107 Certified Pilot & Insured</span>
                 </div>
                 <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
                     High-Precision Aerial Data & Spatial Intelligence
@@ -117,14 +131,64 @@
             </div>
         </section>
 
+        <!-- About & Standards Section -->
+        <section id="about" class="py-20 bg-slate-950 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-brand-500 font-bold">Standard Operating Procedures</span>
+                        <h2 class="text-3xl font-bold text-white mt-2 mb-6">Built on Aviation Discipline, Regulatory Compliance, and Safety</h2>
+                        <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-6">
+                            Insight Aerial Solutions delivers turnkey remote sensing and visual intelligence tailored for general contractors, engineering firms, land developers, and agricultural operators across Northeast Oklahoma and surrounding regions.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="p-4 bg-slate-900 border border-slate-800 rounded-lg">
+                                <i data-lucide="award" class="w-5 h-5 text-brand-500 mb-2"></i>
+                                <h4 class="text-white font-semibold text-sm">FAA Part 107 Licensed</h4>
+                                <p class="text-xs text-slate-400 mt-1">Full commercial airspace authorization & daylight/night operations compliant.</p>
+                            </div>
+                            <div class="p-4 bg-slate-900 border border-slate-800 rounded-lg">
+                                <i data-lucide="shield" class="w-5 h-5 text-brand-500 mb-2"></i>
+                                <h4 class="text-white font-semibold text-sm">Commercial Coverage</h4>
+                                <p class="text-xs text-slate-400 mt-1">Backed by comprehensive liability insurance on all flight profiles.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 space-y-4">
+                        <h3 class="text-lg font-semibold text-white">Enterprise Workflow Pipeline</h3>
+                        <div class="flex items-start gap-4">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold text-xs">01</span>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Pre-Flight Planning & Authorizations</h4>
+                                <p class="text-xs text-slate-400 mt-1">Automated grid trajectories, LAANC airspace approvals, and ground control verification.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold text-xs">02</span>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Precision Data Acquisition</h4>
+                                <p class="text-xs text-slate-400 mt-1">High-overlap photogrammetry, RTK alignment, and calibrated radiometric thermal sweeps.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold text-xs">03</span>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Processing & Client Delivery</h4>
+                                <p class="text-xs text-slate-400 mt-1">GeoTIFF orthomosaics, 3D textured meshes, and thermal heat maps ready for GIS & CAD integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section with Active Netlify Form -->
-        <section id="contact" class="py-20 bg-slate-800/30 border-t border-slate-800">
+        <section id="contact" class="py-20 bg-slate-900/60 border-t border-slate-800">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl font-bold text-white">Ready to Map or Inspect Your Project?</h2>
                 <p class="mt-3 text-slate-400">Connect to discuss mapping coordinates, thermal recovery requirements, or custom flight schedules.</p>
                 
                 <div class="mt-8 bg-slate-800 border border-slate-700 rounded-xl p-8 text-left shadow-2xl">
-                    
                     <!-- Success Message Container -->
                     <div x-show="formSubmitted" class="p-6 bg-emerald-500/10 border border-emerald-500/30 rounded-lg text-center" x-cloak>
                         <div class="p-3 bg-emerald-500/20 text-emerald-400 rounded-full w-fit mx-auto mb-3">
@@ -165,7 +229,6 @@
                             <span x-show="formSubmitting">Sending Request...</span>
                         </button>
                     </form>
-
                 </div>
             </div>
         </section>
@@ -174,7 +237,6 @@
     <!-- ADMIN PORTAL -->
     <div x-show="page === 'admin'" x-cloak class="min-h-[calc(100vh-4rem)] bg-slate-950 p-6">
         <div class="max-w-6xl mx-auto">
-            
             <!-- Login State -->
             <div x-show="!isAdmin" class="max-w-md mx-auto my-20 bg-slate-900 border border-slate-800 rounded-xl p-8 shadow-2xl">
                 <div class="text-center mb-6">
@@ -309,6 +371,82 @@
             </div>
         </div>
     </div>
+
+    <!-- Complete Enterprise Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                <!-- Column 1: Brand & Credentials -->
+                <div class="md:col-span-1 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <img src="assets/logo-insight-aerial.png" alt="Insight Aerial Solutions" class="h-8 w-auto object-contain" onerror="this.style.display='none'">
+                        <span class="text-lg font-bold text-white tracking-tight uppercase">Insight <span class="text-brand-500">Aerial</span></span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Commercial drone services delivering high-precision orthomosaics, 3D spatial models, radiometric thermal recovery, and aerial media.
+                    </p>
+                    <div class="flex items-center gap-2 text-xs text-emerald-400 font-medium">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i>
+                        <span>FAA Part 107 Commercial Remote Pilot</span>
+                    </div>
+                </div>
+
+                <!-- Column 2: Core Services -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Core Deliverables</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-brand-400 transition">Thermal Imaging & Recovery</a></li>
+                        <li><a href="#services" class="hover:text-brand-400 transition">2D Orthomosaic Mapping</a></li>
+                        <li><a href="#services" class="hover:text-brand-400 transition">3D Mesh & Point Clouds</a></li>
+                        <li><a href="#services" class="hover:text-brand-400 transition">Weekly Construction Monitoring</a></li>
+                        <li><a href="#services" class="hover:text-brand-400 transition">Cinematic Aerial Media</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Operational Service Area -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Service Area</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-3">
+                        Based in Tulsa, Oklahoma. Providing commercial and industrial remote sensing across Northeast Oklahoma and adjacent regional corridors.
+                    </p>
+                    <div class="inline-flex items-center gap-2 text-[11px] text-slate-400 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg">
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-500"></i>
+                        <span>Tulsa Metro & Regional Operations</span>
+                    </div>
+                </div>
+
+                <!-- Column 4: Direct Inquiries -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Direct Contact</h4>
+                    <div class="space-y-3 text-xs">
+                        <div class="flex items-center gap-2.5">
+                            <i data-lucide="mail" class="w-4 h-4 text-brand-500"></i>
+                            <a href="mailto:chris@insightaerialsolutions.com" class="text-slate-300 hover:text-white transition">chris@insightaerialsolutions.com</a>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <i data-lucide="clock" class="w-4 h-4 text-brand-500"></i>
+                            <span>Rapid Flight & Mapping Mobilization</span>
+                        </div>
+                        <div class="pt-2">
+                            <a href="#contact" class="inline-block w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg text-xs border border-slate-700 transition">
+                                Request Project Scope
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Legal Bar -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+                <p>&copy; 2026 Insight Aerial Solutions LLC. All rights reserved.</p>
+                <div class="flex items-center space-x-6 text-[11px]">
+                    <a href="#" class="hover:text-slate-400 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400 transition">Terms of Service</a>
+                    <a href="#admin" class="hover:text-slate-400 transition">Admin Portal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script>
         function adminApp() {
