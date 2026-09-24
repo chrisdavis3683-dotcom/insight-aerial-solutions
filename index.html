@@ -432,8 +432,8 @@
             <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
                 <p>&copy; 2026 Insight Aerial Solutions LLC. All rights reserved.</p>
                 <div class="flex items-center space-x-6 text-[11px]">
-                    <a href="#" class="hover:text-slate-400 transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-slate-400 transition">Terms of Service</a>
+                    <button type="button" @click="showPrivacyModal = true" class="hover:text-slate-300 transition focus:outline-none">Privacy Policy</button>
+                    <button type="button" @click="showTermsModal = true" class="hover:text-slate-300 transition focus:outline-none">Terms of Service</button>
                     
                 </div>
             </div>
@@ -453,6 +453,8 @@
 
             return {
                 page: 'home',
+                showPrivacyModal: false,
+                showTermsModal: false,
                 isAdmin: false,
                 adminPassword: '',
                 authError: false,
@@ -620,5 +622,73 @@
             }
         }
     </script>
+
+    <!-- Privacy Policy Modal -->
+    <div x-show="showPrivacyModal" 
+         x-cloak 
+         class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm"
+         @keydown.escape.window="showPrivacyModal = false">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full max-h-[80vh] flex flex-col shadow-2xl overflow-hidden"
+             @click.away="showPrivacyModal = false">
+            <div class="p-6 border-b border-slate-800 flex items-center justify-between">
+                <h3 class="text-lg font-bold text-white">Privacy Policy</h3>
+                <button type="button" @click="showPrivacyModal = false" class="text-slate-400 hover:text-white transition">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
+                <p><strong class="text-white">Effective Date:</strong> January 2026</p>
+                <p>Insight Aerial Solutions LLC ("we", "our", or "us") respects client confidentiality and individual privacy across all digital and aerial operations.</p>
+                
+                <h4 class="font-semibold text-white pt-2">1. Information Collected</h4>
+                <p>We collect contact information (names, corporate emails, telephone numbers, and site addresses) submitted voluntarily via our quote intake forms. We do not sell, rent, or distribute personal or corporate information to third parties.</p>
+
+                <h4 class="font-semibold text-white pt-2">2. Aerial Operations & Incidental Capture</h4>
+                <p>All flight operations are conducted strictly within FAA Part 107 safety regulations and targeted boundaries authorized by the client. Flight paths are planned to minimize incidental visual capture of adjacent private properties. Any uncontracted identifiable personal data inadvertently captured during data collection is excluded from final deliverables.</p>
+
+                <h4 class="font-semibold text-white pt-2">3. Data Retention & Client Ownership</h4>
+                <p>Raw sensor data, orthomosaics, 3D point clouds, and inspection media are retained on secure local storage for client delivery and archival purposes. Deliverables are transferred directly to authorized clients.</p>
+            </div>
+            <div class="p-4 border-t border-slate-800 flex justify-end bg-slate-900/50">
+                <button type="button" @click="showPrivacyModal = false" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-semibold transition">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div x-show="showTermsModal" 
+         x-cloak 
+         class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm"
+         @keydown.escape.window="showTermsModal = false">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full max-h-[80vh] flex flex-col shadow-2xl overflow-hidden"
+             @click.away="showTermsModal = false">
+            <div class="p-6 border-b border-slate-800 flex items-center justify-between">
+                <h3 class="text-lg font-bold text-white">Terms of Service</h3>
+                <button type="button" @click="showTermsModal = false" class="text-slate-400 hover:text-white transition">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
+                <p><strong class="text-white">Effective Date:</strong> January 2026</p>
+                <p>By engaging Insight Aerial Solutions LLC for aerial imaging, data acquisition, or inspection operations, the client agrees to the following operating terms:</p>
+                
+                <h4 class="font-semibold text-white pt-2">1. FAA Compliance & Airspace Authority</h4>
+                <p>All operations are piloted by an FAA Part 107 Remote Pilot in Command (RPIC). Operations are strictly contingent upon FAA airspace authorizations (LAANC/COA), weather minimums, and site safety evaluations. The RPIC maintains sole and absolute authority to delay, cancel, or reschedule flights to maintain safety and federal compliance.</p>
+
+                <h4 class="font-semibold text-white pt-2">2. Site Access & Authorization</h4>
+                <p>Clients warrant that they own or have obtained legal permission and physical authorization to access the subject property and fly the airspace overhead for the requested scope of work.</p>
+
+                <h4 class="font-semibold text-white pt-2">3. Geospatial & Boundary Disclaimer</h4>
+                <p>Aerial photogrammetry, 2D orthomosaic maps, digital elevation models, and 3D point clouds provided by Insight Aerial Solutions LLC are visual and relative spatial data deliverables engineered for visual analysis, planning, and progress tracking. They do not constitute certified legal boundary surveys or engineering stamped deliverables unless verified by a state-licensed surveyor or professional engineer.</p>
+
+                <h4 class="font-semibold text-white pt-2">4. Weather & Rescheduling</h4>
+                <p>Flights postponed due to severe wind, precipitation, low cloud ceilings, or temporary airspace restrictions (TFRs) will be rescheduled for the earliest mutually viable weather window at no penalty.</p>
+            </div>
+            <div class="p-4 border-t border-slate-800 flex justify-end bg-slate-900/50">
+                <button type="button" @click="showTermsModal = false" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-semibold transition">Close</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
