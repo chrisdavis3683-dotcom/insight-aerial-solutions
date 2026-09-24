@@ -64,7 +64,7 @@
 
             <div class="flex items-center space-x-4">
 
-                <a href="#contact" @click="goToHome()" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2.5 rounded-lg text-sm font-semibold transition shadow-md shadow-brand-900/30">
+                <a href="#contact" @click.prevent="scrollToContact()" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2.5 rounded-lg text-sm font-semibold transition shadow-md shadow-brand-900/30 cursor-pointer">
                     Request Quote
                 </a>
             </div>
@@ -87,7 +87,7 @@
                     Delivering actionable orthomosaics, 3D spatial models, radiometric thermal imaging, and visual asset inspection data for commercial and field operations.
                 </p>
                 <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#contact" class="bg-brand-600 hover:bg-brand-500 text-white font-semibold px-8 py-3.5 rounded-lg text-base shadow-lg transition">Get Project Estimate</a>
+                    <a href="#contact" @click.prevent="scrollToContact()" class="bg-brand-600 hover:bg-brand-500 text-white font-semibold px-8 py-3.5 rounded-lg text-base shadow-lg transition cursor-pointer">Get Project Estimate</a>
                     <a href="#services" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-8 py-3.5 rounded-lg text-base border border-slate-700 transition">Explore Services</a>
                 </div>
             </div>
@@ -420,7 +420,7 @@
                             <span>Rapid Flight & Mapping Mobilization</span>
                         </div>
                         <div class="pt-2">
-                            <a href="#contact" class="inline-block w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg text-xs border border-slate-700 transition">
+                            <a href="#contact" @click.prevent="scrollToContact()" class="inline-block w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg text-xs border border-slate-700 transition cursor-pointer">
                                 Request Project Scope
                             </a>
                         </div>
@@ -511,6 +511,11 @@
                     }
                 },
 
+                scrollToContact() {
+                    this.page = 'home';
+                    const el = document.getElementById('contact');
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                },
                 goToHome() {
                     this.page = 'home';
                     history.pushState("", document.title, window.location.pathname);
