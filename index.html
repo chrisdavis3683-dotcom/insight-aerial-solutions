@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insight Aerial Solutions | Precision Drone Services</title>
+    <title>Insight Aerial Solutions | Commercial Reality Capture & Aerial Data</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Alpine.js -->
@@ -40,6 +40,7 @@
         <input type="text" name="name" />
         <input type="email" name="email" />
         <input type="text" name="service_type" />
+        <input type="text" name="project_scope" />
         <textarea name="message"></textarea>
     </form>
 
@@ -47,25 +48,26 @@
     <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" @click.prevent="goToHome()" class="flex items-center gap-2 group">
-                <img src="assets/Logo.png" alt="Insight Aerial Solutions" class="h-11 sm:h-12 w-auto object-contain transition duration-200 group-hover:scale-105 drop-shadow-[0_0_12px_rgba(56,189,248,0.25)]">
+                <img src="assets/Logo.png" alt="Insight Aerial Solutions" class="h-11 sm:h-12 w-auto object-contain transition duration-200 group-hover:scale-105 drop-shadow-[0_0_12px_rgba(56,189,248,0.25)]" onerror="this.style.display='none'">
                 <div class="flex flex-col justify-center">
                     <span class="text-xl sm:text-2xl font-black tracking-tight text-white uppercase leading-none">
                         Insight Aerial <span class="text-brand-500">Solutions</span>
                     </span>
-                    <span class="text-[9px] sm:text-[11px] tracking-[0.22em] font-semibold text-slate-400 uppercase mt-1">Spatial Intelligence & Aerial Media</span>
+                    <span class="text-[9px] sm:text-[11px] tracking-[0.22em] font-semibold text-slate-400 uppercase mt-1">Spatial Intelligence & Reality Capture</span>
                 </div>
             </a>
             
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                <a href="#services" @click="goToHome()" class="hover:text-brand-500 transition">Services</a>
-                <a href="#about" @click="goToHome()" class="hover:text-brand-500 transition">About</a>
+                <a href="#pipeline" @click="goToHome()" class="hover:text-brand-500 transition">Our Pipeline</a>
+                <a href="#packages" @click="goToHome()" class="hover:text-brand-500 transition">Commercial Packages</a>
+                <a href="#services" @click="goToHome()" class="hover:text-brand-500 transition">Deliverables</a>
+                <a href="#about" @click="goToHome()" class="hover:text-brand-500 transition">Standards</a>
                 <a href="#contact" @click="goToHome()" class="hover:text-brand-500 transition">Contact</a>
             </nav>
 
             <div class="flex items-center space-x-4">
-
                 <a href="#contact" @click.prevent="scrollToContact()" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2.5 rounded-lg text-sm font-semibold transition shadow-md shadow-brand-900/30 cursor-pointer">
-                    Request Quote
+                    Request Scope
                 </a>
             </div>
         </div>
@@ -76,29 +78,273 @@
         <!-- Hero Section -->
         <section class="relative py-24 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                <div class="inline-flex items-center space-x-2 bg-brand-500/10 border border-brand-500/20 text-brand-500 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
-                    <i data-lucide="shield-check" class="w-4 h-4"></i>
-                    <span>FAA Part 107 Certified Pilot & Insured</span>
+                <div class="inline-flex flex-wrap items-center justify-center gap-2 bg-brand-500/10 border border-brand-500/20 text-brand-500 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+                    <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4"></i> FAA Part 107 Remote Pilot</span>
+                    <span class="text-slate-600">•</span>
+                    <span class="flex items-center gap-1.5"><i data-lucide="hard-hat" class="w-4 h-4 text-emerald-400"></i> OSHA 29 CFR 1926</span>
+                    <span class="text-slate-600">•</span>
+                    <span class="text-slate-300">Commercial Pro 3D Scanners</span>
                 </div>
                 <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
-                    High-Precision Aerial Data & Spatial Intelligence
+                    Integrated Reality Capture for the Built Environment
                 </h1>
-                <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto">
-                    Delivering actionable orthomosaics, 3D spatial models, radiometric thermal imaging, and visual asset inspection data for commercial and field operations.
+                <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                    Connecting exterior site photogrammetry with millimeter-accurate interior as-builts. We provide Tulsa's general contractors, architects, and facility operators with actionable point clouds, BIM-ready spatial data, and thermal analytics.
                 </p>
                 <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#contact" @click.prevent="scrollToContact()" class="bg-brand-600 hover:bg-brand-500 text-white font-semibold px-8 py-3.5 rounded-lg text-base shadow-lg transition cursor-pointer">Get Project Estimate</a>
-                    <a href="#services" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-8 py-3.5 rounded-lg text-base border border-slate-700 transition">Explore Services</a>
+                    <a href="#packages" class="bg-brand-600 hover:bg-brand-500 text-white font-semibold px-8 py-3.5 rounded-lg text-base shadow-lg transition cursor-pointer">Explore Project Packages</a>
+                    <a href="#pipeline" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-8 py-3.5 rounded-lg text-base border border-slate-700 transition">The Dual-Capture Pipeline</a>
                 </div>
             </div>
         </section>
 
-        <!-- Dynamic Deliverables / Services Section -->
+        <!-- DUAL-CAPTURE PIPELINE (Unified Positioning) -->
+        <section id="pipeline" class="py-20 bg-slate-950 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs uppercase tracking-widest text-brand-500 font-bold">End-to-End Spatial Intelligence</span>
+                    <h2 class="text-3xl font-bold text-white mt-2">From Sky to Subfloor: One Unified Digital Asset</h2>
+                    <p class="mt-3 text-slate-400 text-sm sm:text-base">
+                        Stop juggling multiple vendors for drone photos and interior measurements. We synchronize aerial site photogrammetry with commercial laser and structured light scanning to document your entire facility envelope.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Column 1: Aerial Photogrammetry -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/40 transition">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="p-3 bg-brand-500/10 text-brand-400 rounded-xl">
+                                <i data-lucide="plane" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-brand-500">Exterior & Site Level</span>
+                                <h3 class="text-xl font-bold text-white">Aerial Photogrammetry & Remote Sensing</h3>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            High-altitude mapping to capture site conditions, earthwork grading, high-density roof evaluations, and envelope thermography.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-2.5 text-xs text-slate-300">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>High-Resolution Orthomosaics:</strong> Sub-inch per pixel GeoTIFF site maps georeferenced for civil CAD.</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-300">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Digital Surface Models (DSM/DTM):</strong> Volumetric stockpile analysis and cut/fill site contours.</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-300">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Radiometric Thermal Sweeps:</strong> Detect subsurface roof moisture trapping and utility insulation deficits.</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-300">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Deliverables:</strong> GeoTIFF, LAS/LAZ point clouds, high-res aerial media, radiometric thermal reports.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Interior Reality Capture -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/40 transition">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="p-3 bg-brand-500/10 text-brand-400 rounded-xl">
+                                <i data-lucide="scan" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-brand-500">Interior & Architectural Level</span>
+                                <h3 class="text-xl font-bold text-white">Terrestrial 3D Laser & As-Built Capture</h3>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            High-density structured infrared reality capture (Matterport Pro2) engineered for tenant improvements, architectural design, and MEP documentation.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-2.5 text-xs text-slate-300">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Pre-Demo As-Built Baseline:</strong> Replace outdated blueprints with registered 3D dimensional twins.</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-300">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Pre-Drywall MEP Verification:</strong> "X-ray" documentation of in-wall conduit, plumbing, and plenum drops.</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-300">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Scan-to-BIM Readiness:</strong> Direct export of registered E57 point clouds into Autodesk Revit & AutoCAD.</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-300">
+                                <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Deliverables:</strong> Registered E57 files, MatterPak (.OBJ/.XYZ), 2D vector floor plans, LOD 200 Revit (.RVT).</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMMERCIAL ENGAGEMENT PACKAGES -->
+        <section id="packages" class="py-20 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs uppercase tracking-widest text-brand-500 font-bold">Standardized Project Scopes</span>
+                    <h2 class="text-3xl font-bold text-white mt-2">Commercial Engagement Packages</h2>
+                    <p class="mt-3 text-slate-400 text-sm sm:text-base">
+                        Engineered around the milestones general contractors, interior architects, and facility managers rely on. Select a scope below to receive an estimate based on your facility footprint.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Package 1: Pre-Bid Digital Twin -->
+                    <div class="bg-slate-800/60 border border-slate-700 rounded-2xl p-7 flex flex-col justify-between hover:border-brand-500 transition">
+                        <div>
+                            <span class="bg-brand-500/20 text-brand-400 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">Package 01</span>
+                            <h3 class="text-xl font-bold text-white mt-3">Pre-Bid Digital Twin</h3>
+                            <p class="text-xs text-slate-400 mt-1 mb-6">Accelerate trade estimating & remote subcontractor walkthroughs.</p>
+                            
+                            <ul class="space-y-3 text-xs text-slate-300 border-t border-slate-700/80 pt-6">
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>High-Resolution 3D Walkthrough:</strong> Full interior scan accessible via private, unlisted browser link.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>Remote Sub Bidding:</strong> Mechanical, framing, and electrical subs pull accurate dimensions from their desks.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>2D Schematic Floor Plan:</strong> Clean dimensional floor layouts showing room sizes and Gross Internal Area (PDF/PNG).</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>6 Months Active Hosting:</strong> Zero software installation or user accounts required for project partners.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-slate-700/80">
+                            <span class="block text-[11px] text-slate-400 mb-3">Ideal for: Estimating walks, commercial lease marketing, and tenant turnover baselines.</span>
+                            <a href="#contact" @click="selectPackage('Package 01: Pre-Bid Digital Twin')" class="block w-full text-center bg-slate-700 hover:bg-brand-600 text-white font-semibold py-2.5 rounded-lg text-xs transition">
+                                Request Pre-Bid Scope
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Package 2: As-Built CAD & BIM Package (Featured) -->
+                    <div class="bg-gradient-to-b from-slate-800 to-slate-900 border-2 border-brand-500 rounded-2xl p-7 flex flex-col justify-between relative shadow-2xl shadow-brand-900/30">
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-500 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                            Architects & VDC Teams
+                        </div>
+                        <div>
+                            <span class="bg-brand-500/20 text-brand-400 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">Package 02</span>
+                            <h3 class="text-xl font-bold text-white mt-3">As-Built CAD / BIM</h3>
+                            <p class="text-xs text-slate-400 mt-1 mb-6">Skip manual tape measuring and eliminate outdated legacy blueprint risks.</p>
+                            
+                            <ul class="space-y-3 text-xs text-slate-300 border-t border-slate-700/80 pt-6">
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>Registered E57 Point Cloud:</strong> ASTM-standard high-density point cloud ready for Autodesk ReCap, Revit & Navisworks.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>MatterPak™ Bundle:</strong> Colorized .XYZ point cloud, .OBJ 3D textured mesh, and high-res ceiling/floor maps.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>Parametric Revit Conversion:</strong> Ready-to-draft Autodesk Revit (.RVT) modeled to LOD 200 architectural scope (optional add-on).</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>High-Precision 2D Vector CAD:</strong> Detailed vector layouts delivered in SVG and architectural PDF formats.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-slate-700/80">
+                            <span class="block text-[11px] text-slate-400 mb-3">Ideal for: Commercial renovation design, MEP clash detection, and engineering teams.</span>
+                            <a href="#contact" @click="selectPackage('Package 02: As-Built CAD / BIM Package')" class="block w-full text-center bg-brand-600 hover:bg-brand-500 text-white font-semibold py-2.5 rounded-lg text-xs transition shadow-lg shadow-brand-900/40">
+                                Request As-Built / E57 Scope
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Package 3: Construction Lifecycle Tracking -->
+                    <div class="bg-slate-800/60 border border-slate-700 rounded-2xl p-7 flex flex-col justify-between hover:border-brand-500 transition">
+                        <div>
+                            <span class="bg-brand-500/20 text-brand-400 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">Package 03</span>
+                            <h3 class="text-xl font-bold text-white mt-3">Lifecycle Tracking</h3>
+                            <p class="text-xs text-slate-400 mt-1 mb-6">Airtight risk mitigation from initial demo through owner handover.</p>
+                            
+                            <ul class="space-y-3 text-xs text-slate-300 border-t border-slate-700/80 pt-6">
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>Phase 1 (Pre-Demo Baseline):</strong> Complete scan documenting pre-existing facility conditions to protect against change orders.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>Phase 2 (Pre-Drywall MEP):</strong> Captures exposed framing, in-wall conduits, and ceiling plenum runs before closure.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>Phase 3 (Substantial Completion):</strong> Final visual twin for punch-list coordination and owner handover.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+                                    <span><strong>Spatial Equipment Tags:</strong> Embed O&M manuals, shutoff valve locations, and warranty data inside the twin.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-slate-700/80">
+                            <span class="block text-[11px] text-slate-400 mb-3">Ideal for: Healthcare build-outs, TI general contractors, and facility directors.</span>
+                            <a href="#contact" @click="selectPackage('Package 03: Construction Lifecycle Tracking')" class="block w-full text-center bg-slate-700 hover:bg-brand-600 text-white font-semibold py-2.5 rounded-lg text-xs transition">
+                                Discuss Project Lifecycle
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHO WE SERVE SECTION -->
+        <section class="py-16 bg-slate-950 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+                        <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center mb-4">
+                            <i data-lucide="hammer" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="text-base font-bold text-white mb-2">Tenant Improvement (TI) Contractors</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Stop losing time to sub walks and disputing pre-existing building flaws. Give subcontractors a millimeter-accurate digital walkthrough to price jobs remotely and defend against unauthorized change orders.
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+                        <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center mb-4">
+                            <i data-lucide="compass" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="text-base font-bold text-white mb-2">Architects & Design Teams</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Eliminate days of field hand-measuring with laser distos. Drop ASTM-standard E57 point clouds or parametric LOD 200 Revit models directly into your drafting workspace with accurate wall thicknesses and ceiling heights.
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+                        <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center mb-4">
+                            <i data-lucide="building-2" class="w-5 h-5"></i>
+                        </div>
+                        <h4 class="text-base font-bold text-white mb-2">Commercial Facility Managers</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Centralize spatial records for mechanical penthouses, electrical distribution rooms, and tenant suites. Tag maintenance equipment records and shutoff valves directly in an interactive cloud twin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Deliverables / Services Section (Managed via CMS Admin) -->
         <section id="services" class="py-20 bg-slate-900 border-t border-slate-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-white">Our Core Deliverables</h2>
-                    <p class="mt-3 text-slate-400">Tailored spatial data, thermal analytics, and aerial media services engineered to meet commercial requirements.</p>
+                    <span class="text-xs uppercase tracking-widest text-brand-500 font-bold">Comprehensive Capabilities</span>
+                    <h2 class="text-3xl font-bold text-white mt-2">Specialized Data & Media Deliverables</h2>
+                    <p class="mt-3 text-slate-400">Tactical aerial remote sensing and interior 3D spatial intelligence tailored for Tulsa regional operations.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -123,44 +369,54 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <span class="text-xs uppercase tracking-widest text-brand-500 font-bold">Standard Operating Procedures</span>
-                        <h2 class="text-3xl font-bold text-white mt-2 mb-6">Built on Aviation Discipline, Regulatory Compliance, and Safety</h2>
+                        <h2 class="text-3xl font-bold text-white mt-2 mb-6">Aviation Discipline, Construction Safety & Certified Field Standards</h2>
                         <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-6">
-                            Insight Aerial Solutions delivers turnkey remote sensing and visual intelligence tailored for general contractors, engineering firms, land developers, and agricultural operators across Northeast Oklahoma and surrounding regions.
+                            Insight Aerial Solutions delivers turnkey remote sensing and reality capture engineered for commercial contractors, healthcare suites, engineering firms, and agricultural operators across Northeast Oklahoma.
                         </p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div class="p-4 bg-slate-900 border border-slate-800 rounded-lg">
                                 <i data-lucide="award" class="w-5 h-5 text-brand-500 mb-2"></i>
                                 <h4 class="text-white font-semibold text-sm">FAA Part 107 Licensed</h4>
-                                <p class="text-xs text-slate-400 mt-1">Full commercial airspace authorization & daylight/night operations compliant.</p>
+                                <p class="text-xs text-slate-400 mt-1">Full commercial airspace authorization & daylight/night flight compliant.</p>
                             </div>
                             <div class="p-4 bg-slate-900 border border-slate-800 rounded-lg">
                                 <i data-lucide="shield" class="w-5 h-5 text-brand-500 mb-2"></i>
                                 <h4 class="text-white font-semibold text-sm">Commercial Coverage</h4>
-                                <p class="text-xs text-slate-400 mt-1">Backed by comprehensive liability insurance on all flight profiles.</p>
+                                <p class="text-xs text-slate-400 mt-1">Backed by comprehensive liability insurance on all aerial and terrestrial capture.</p>
+                            </div>
+                            <div class="p-4 bg-slate-900 border border-slate-800 rounded-lg">
+                                <i data-lucide="hard-hat" class="w-5 h-5 text-emerald-400 mb-2"></i>
+                                <h4 class="text-white font-semibold text-sm">OSHA 29 CFR 1926</h4>
+                                <p class="text-xs text-slate-400 mt-1">PPE compliant, hard hat/vest safety protocol across active job sites.</p>
+                            </div>
+                            <div class="p-4 bg-slate-900 border border-slate-800 rounded-lg">
+                                <i data-lucide="layers" class="w-5 h-5 text-brand-500 mb-2"></i>
+                                <h4 class="text-white font-semibold text-sm">Hardware Calibrated</h4>
+                                <p class="text-xs text-slate-400 mt-1">Pro2 structured light sensors and radiometric thermal optics.</p>
                             </div>
                         </div>
                     </div>
                     <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 space-y-4">
-                        <h3 class="text-lg font-semibold text-white">Enterprise Workflow Pipeline</h3>
+                        <h3 class="text-lg font-semibold text-white">Three-Tier Quality Assurance Pipeline</h3>
                         <div class="flex items-start gap-4">
                             <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold text-xs">01</span>
                             <div>
-                                <h4 class="text-sm font-semibold text-white">Pre-Flight Planning & Authorizations</h4>
-                                <p class="text-xs text-slate-400 mt-1">Automated grid trajectories, FAA LAANC airspace authorizations, and target site boundary assessment.</p>
+                                <h4 class="text-sm font-semibold text-white">Pre-Capture Planning & Boundary Grid</h4>
+                                <p class="text-xs text-slate-400 mt-1">Automated aerial flight trajectories, LAANC authorizations, and interior line-of-sight threshold planning.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
                             <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold text-xs">02</span>
                             <div>
-                                <h4 class="text-sm font-semibold text-white">Precision Data Acquisition</h4>
-                                <p class="text-xs text-slate-400 mt-1">High-overlap photogrammetry, multi-angle oblique captures, and calibrated radiometric thermal sweeps.</p>
+                                <h4 class="text-sm font-semibold text-white">Multi-Sensor Data Acquisition</h4>
+                                <p class="text-xs text-slate-400 mt-1">High-overlap photogrammetry, radiometric thermal sweeps, and dense 3D structured light scan meshes.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
                             <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold text-xs">03</span>
                             <div>
-                                <h4 class="text-sm font-semibold text-white">Processing & Client Delivery</h4>
-                                <p class="text-xs text-slate-400 mt-1">GeoTIFF orthomosaics, 3D textured meshes, and thermal heat maps ready for GIS & CAD integration.</p>
+                                <h4 class="text-sm font-semibold text-white">Engineering-Grade Asset Delivery</h4>
+                                <p class="text-xs text-slate-400 mt-1">Registered E57 point clouds, GeoTIFF orthomosaics, and unlisted cloud links with 6 months hosting included.</p>
                             </div>
                         </div>
                     </div>
@@ -171,8 +427,8 @@
         <!-- Contact Section with Active Netlify Form -->
         <section id="contact" class="py-20 bg-slate-900/60 border-t border-slate-800">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-white">Ready to Map or Inspect Your Project?</h2>
-                <p class="mt-3 text-slate-400">Connect to discuss mapping coordinates, thermal recovery requirements, or custom flight schedules.</p>
+                <h2 class="text-3xl font-bold text-white">Request a Project Scope & Estimate</h2>
+                <p class="mt-3 text-slate-400">Tell us about your facility square footage, project address, or mapping parameters. We calculate proposals rapidly.</p>
                 
                 <div class="mt-8 bg-slate-800 border border-slate-700 rounded-xl p-8 text-left shadow-2xl">
                     <!-- Success Message Container -->
@@ -180,39 +436,55 @@
                         <div class="p-3 bg-emerald-500/20 text-emerald-400 rounded-full w-fit mx-auto mb-3">
                             <i data-lucide="check-circle" class="w-8 h-8"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white">Request Received!</h3>
-                        <p class="text-sm text-slate-300 mt-2">Thank you for reaching out. We will review your project parameters and respond shortly.</p>
-                        <button type="button" @click="formSubmitted = false" class="mt-4 text-xs text-brand-400 hover:underline">Submit another inquiry</button>
+                        <h3 class="text-xl font-bold text-white">Project Scope Received!</h3>
+                        <p class="text-sm text-slate-300 mt-2">Thank you for reaching out. We will review your facility parameters and deliver a formal proposal shortly.</p>
+                        <button type="button" @click="formSubmitted = false" class="mt-4 text-xs text-brand-400 hover:underline">Submit another project inquiry</button>
                     </div>
 
                     <!-- Interactive Form -->
                     <form x-show="!formSubmitted" @submit.prevent="submitContactForm" class="space-y-4">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Name</label>
-                            <input type="text" x-model="formData.name" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-brand-500" placeholder="John Doe">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Name</label>
+                                <input type="text" x-model="formData.name" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-brand-500" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Corporate Email</label>
+                                <input type="email" x-model="formData.email" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-brand-500" placeholder="john@company.com">
+                            </div>
                         </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Email</label>
-                            <input type="email" x-model="formData.email" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-brand-500" placeholder="john@example.com">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Primary Service</label>
+                                <select x-model="formData.service_type" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-brand-500">
+                                    <option value="Commercial Interior 3D Reality Capture">Commercial Interior 3D Reality Capture</option>
+                                    <option value="As-Built Point Cloud (E57 / BIM)">As-Built Point Cloud (E57 / BIM)</option>
+                                    <option value="Aerial Drone Photogrammetry & Orthomosaics">Aerial Drone Photogrammetry & Orthomosaics</option>
+                                    <option value="Radiometric Thermal Imaging">Radiometric Thermal Imaging</option>
+                                    <option value="Construction Lifecycle Monitoring (Sky + Interior)">Construction Lifecycle (Sky + Interior)</option>
+                                    <option value="Commercial Roof / Envelope Inspection">Commercial Roof / Envelope Inspection</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Target Package Scope</label>
+                                <select x-model="formData.project_scope" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-brand-500">
+                                    <option value="Package 01: Pre-Bid Digital Twin">Package 01: Pre-Bid Digital Twin</option>
+                                    <option value="Package 02: As-Built CAD / BIM Package">Package 02: As-Built CAD / BIM Package</option>
+                                    <option value="Package 03: Construction Lifecycle Tracking">Package 03: Construction Lifecycle Tracking</option>
+                                    <option value="Aerial Drone Survey Only">Aerial Drone Survey Only</option>
+                                    <option value="Custom Unified (Sky to Subfloor) Scope">Custom Unified (Sky to Subfloor) Scope</option>
+                                </select>
+                            </div>
                         </div>
+
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Service Required</label>
-                            <select x-model="formData.service_type" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-brand-500">
-                                <option value="Thermal Imaging & Radiometrics">Thermal Imaging & Radiometrics (Ethical Recovery / Inspection)</option>
-                                <option value="2D Orthomosaic Mapping">2D Orthomosaic Mapping</option>
-                                <option value="3D Mesh & Point Clouds">3D Mesh & Point Clouds</option>
-                                <option value="Infrastructure & Asset Inspection">Infrastructure & Asset Inspection</option>
-                                <option value="Weekly Progress Monitoring">Weekly Progress Monitoring</option>
-                                <option value="Site Condition & Damage Documentation">Site Condition & Damage Documentation</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Project Scope / Requirements</label>
-                            <textarea x-model="formData.message" rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-brand-500" placeholder="Location, acreage, thermal vs mapping needs..."></textarea>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Project Details & Location</label>
+                            <textarea x-model="formData.message" rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-100 focus:outline-none focus:border-brand-500" placeholder="Facility address, approximate square footage, timeline, or CAD/BIM export requirements..."></textarea>
                         </div>
                         <button type="submit" :disabled="formSubmitting" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-semibold py-3 rounded-lg transition shadow-lg shadow-brand-900/40 disabled:opacity-50">
-                            <span x-show="!formSubmitting">Submit Request</span>
-                            <span x-show="formSubmitting">Sending Request...</span>
+                            <span x-show="!formSubmitting">Submit Scope Request</span>
+                            <span x-show="formSubmitting">Transmitting Request...</span>
                         </button>
                     </form>
                 </div>
@@ -220,7 +492,7 @@
         </section>
     </main>
 
-    <!-- ADMIN PORTAL -->
+    <!-- ADMIN PORTAL (Preserved & Live Syncable) -->
     <div x-show="page === 'admin'" x-cloak class="min-h-[calc(100vh-4rem)] bg-slate-950 p-6">
         <div class="max-w-6xl mx-auto">
             <!-- Login State -->
@@ -273,13 +545,13 @@
                             <div class="sm:col-span-3">
                                 <label class="block text-[10px] uppercase text-slate-400 font-bold mb-1">Icon</label>
                                 <select x-model="newService.icon" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 focus:outline-none focus:border-brand-500">
+                                    <option value="Scan">Scan (Interior 3D)</option>
+                                    <option value="Layers">Layers (Point Cloud/BIM)</option>
+                                    <option value="Map">Map (Ortho Mapping)</option>
                                     <option value="Flame">Flame (Thermal)</option>
-                                    <option value="Map">Map (Ortho)</option>
                                     <option value="Box">Box (3D Mesh)</option>
-                                    <option value="Video">Video (Aerial)</option>
-                                    <option value="Compass">Compass (Planning)</option>
-                                    <option value="Camera">Camera</option>
-                                    <option value="Layers">Layers</option>
+                                    <option value="Camera">Camera (Monitoring)</option>
+                                    <option value="Search">Search (Inspection)</option>
                                 </select>
                             </div>
                             <div class="sm:col-span-5">
@@ -330,13 +602,13 @@
                                             <div class="sm:col-span-3">
                                                 <label class="block text-[10px] uppercase text-slate-400 font-bold mb-1">Icon</label>
                                                 <select x-model="editForm.icon" class="w-full bg-slate-900 border border-slate-600 rounded px-3 py-1.5 text-xs text-white focus:outline-none focus:border-brand-500">
+                                                    <option value="Scan">Scan (Interior 3D)</option>
+                                                    <option value="Layers">Layers (Point Cloud/BIM)</option>
+                                                    <option value="Map">Map (Ortho Mapping)</option>
                                                     <option value="Flame">Flame (Thermal)</option>
-                                                    <option value="Map">Map (Ortho)</option>
                                                     <option value="Box">Box (3D Mesh)</option>
-                                                    <option value="Video">Video (Aerial)</option>
-                                                    <option value="Compass">Compass (Planning)</option>
-                                                    <option value="Camera">Camera</option>
-                                                    <option value="Layers">Layers</option>
+                                                    <option value="Camera">Camera (Monitoring)</option>
+                                                    <option value="Search">Search (Inspection)</option>
                                                 </select>
                                             </div>
                                             <div class="sm:col-span-4 flex items-end justify-end gap-2">
@@ -369,29 +641,29 @@
                         <span class="text-lg font-bold text-white tracking-tight uppercase">Insight Aerial <span class="text-brand-500">Solutions</span></span>
                     </div>
                     <p class="text-xs text-slate-400 leading-relaxed">
-                        Commercial drone services delivering high-precision orthomosaics, 3D spatial models, radiometric thermal recovery, and aerial media.
+                        Integrated spatial intelligence delivering commercial 3D reality capture, registered E57 point clouds, high-precision orthomosaics, and radiometric thermal diagnostics.
                     </p>
                     <div class="flex items-center gap-2 text-xs text-emerald-400 font-medium">
                         <i data-lucide="check-circle" class="w-4 h-4"></i>
                         <span>FAA Part 107 Commercial Remote Pilot</span>
                     </div>
-                <div class="flex items-center gap-2 text-xs text-emerald-400 font-medium mt-1.5">
-                    <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                    <span>OSHA 29 CFR 1926 (Construction Safety)</span>
-                </div>
+                    <div class="flex items-center gap-2 text-xs text-emerald-400 font-medium mt-1.5">
+                        <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        <span>OSHA 29 CFR 1926 (Construction Safety)</span>
+                    </div>
                 </div>
 
                 <!-- Column 2: Core Services -->
                 <div>
                     <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Core Deliverables</h4>
                     <ul class="space-y-2 text-xs">
-                        <li><a href="#services" class="hover:text-brand-400 transition">Thermal Imaging & Recovery</a></li>
+                        <li><a href="#packages" class="hover:text-brand-400 transition">Pre-Bid 3D Digital Twins</a></li>
+                        <li><a href="#packages" class="hover:text-brand-400 transition">As-Built CAD & BIM (E57 / RVT)</a></li>
+                        <li><a href="#packages" class="hover:text-brand-400 transition">MEP Rough-In Verification</a></li>
                         <li><a href="#services" class="hover:text-brand-400 transition">2D Orthomosaic Mapping</a></li>
-                        <li><a href="#services" class="hover:text-brand-400 transition">3D Mesh & Point Clouds</a></li>
-                        <li><a href="#services" class="hover:text-brand-400 transition">Weekly Construction Monitoring</a></li>
-                        <li><a href="#services" class="hover:text-brand-400 transition">Infrastructure & Asset Inspection</a></li>
+                        <li><a href="#services" class="hover:text-brand-400 transition">Thermal Imaging & Recovery</a></li>
                     </ul>
                 </div>
 
@@ -399,7 +671,7 @@
                 <div>
                     <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Service Area</h4>
                     <p class="text-xs text-slate-400 leading-relaxed mb-3">
-                        Based in Tulsa, Oklahoma. Providing commercial and industrial remote sensing across Northeast Oklahoma and adjacent regional corridors.
+                        Based in Tulsa, Oklahoma. Providing commercial reality capture, interior scanning, and aerial remote sensing across Northeast Oklahoma and regional construction corridors.
                     </p>
                     <div class="inline-flex items-center gap-2 text-[11px] text-slate-400 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg">
                         <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-500"></i>
@@ -411,17 +683,17 @@
                 <div>
                     <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Direct Contact</h4>
                     <div class="space-y-3 text-xs">
-                 <div class="flex items-center gap-2.5">
+                        <div class="flex items-center gap-2.5">
                             <i data-lucide="phone" class="w-4 h-4 text-brand-500"></i>
                             <a href="tel:19182219758" class="text-slate-300 hover:text-white transition">(918) 221-9758</a>
                         </div>       
-<div class="flex items-center gap-2.5">
+                        <div class="flex items-center gap-2.5">
                             <i data-lucide="mail" class="w-4 h-4 text-brand-500"></i>
                             <a href="mailto:chris@insightaerialsolutions.com" class="text-slate-300 hover:text-white transition">chris@insightaerialsolutions.com</a>
                         </div>
                         <div class="flex items-center gap-2.5">
                             <i data-lucide="clock" class="w-4 h-4 text-brand-500"></i>
-                            <span>Rapid Flight & Mapping Mobilization</span>
+                            <span>Rapid Field Mobilization</span>
                         </div>
                         <div class="pt-2">
                             <a href="#contact" @click.prevent="scrollToContact()" class="inline-block w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg text-xs border border-slate-700 transition cursor-pointer">
@@ -438,7 +710,6 @@
                 <div class="flex items-center space-x-6 text-[11px]">
                     <button type="button" @click="showPrivacyModal = true" class="hover:text-slate-300 transition focus:outline-none">Privacy Policy</button>
                     <button type="button" @click="showTermsModal = true" class="hover:text-slate-300 transition focus:outline-none">Terms of Service</button>
-                    
                 </div>
             </div>
         </div>
@@ -447,12 +718,12 @@
     <script>
         function adminApp() {
             const defaultList = [
-                { id: 1, title: 'Thermal Imaging & Radiometrics', desc: 'Targeted radiometric thermal detection for ethical game recovery, livestock surveys, roof moisture intrusion, and utility diagnostics.', icon: 'Flame' },
-                { id: 2, title: '2D Orthomosaic Mapping', desc: 'High-resolution stitched orthomosaic maps with high-resolution georeferenced spatial accuracy for construction & land analysis.', icon: 'Map' },
-                { id: 3, title: '3D Mesh & Point Clouds', desc: 'Detailed volumetric 3D models and point cloud data ready for CAD, BIM, and spatial inspections.', icon: 'Box' },
-                { id: 4, title: 'Infrastructure & Asset Inspection', desc: 'High-resolution optical audits of commercial roofing, exterior envelopes, and facility assets to pinpoint defects without ladders or scaffolding.', icon: 'Search' },
-                { id: 5, title: 'Weekly Progress Monitoring', desc: 'High-frequency aerial tracking and orthomosaic updates designed for project managers, lenders, and investors.', icon: 'Camera' },
-                { id: 6, title: 'Site Condition & Damage Documentation', desc: 'Baseline pre-construction visual records, boundary verification, and rapid-response aerial audits for insurance claims and post-storm damage.', icon: 'Shield' }
+                { id: 1, title: 'Commercial Interior 3D Reality Capture', desc: 'Millimeter-accurate structured light digital twins for tenant improvements, retail, medical suites, and subcontractor bidding.', icon: 'Scan' },
+                { id: 2, title: 'As-Built CAD & BIM Deliverables', desc: 'Pre-registered ASTM E57 high-density point clouds, MatterPak (.OBJ/.XYZ), and LOD 200 Revit models for architectural teams.', icon: 'Layers' },
+                { id: 3, title: '2D Orthomosaic Aerial Mapping', desc: 'High-resolution stitched orthomosaics with georeferenced spatial accuracy for construction site grading and civil planning.', icon: 'Map' },
+                { id: 4, title: 'Thermal Imaging & Radiometrics', desc: 'Targeted radiometric thermal detection for roof moisture intrusion, insulation gaps, utility diagnostics, and wildlife recovery.', icon: 'Flame' },
+                { id: 5, title: 'Pre-Drywall MEP Verification', desc: 'Comprehensive date-stamped visual records of in-wall piping, electrical conduit, and above-ceiling plenum mechanical drops.', icon: 'Search' },
+                { id: 6, title: 'Construction Progress Tracking', desc: 'Synchronized aerial site monitoring paired with interior walkthrough milestones for project managers, lenders, and owners.', icon: 'Camera' }
             ];
 
             return {
@@ -464,19 +735,20 @@
                 authError: false,
                 editingId: null,
                 editForm: { title: '', desc: '', icon: '' },
-                newService: { title: '', desc: '', icon: 'Flame' },
+                newService: { title: '', desc: '', icon: 'Scan' },
                 services: [],
                 formSubmitting: false,
                 formSubmitted: false,
                 formData: {
                     name: '',
                     email: '',
-                    service_type: 'Thermal Imaging & Radiometrics',
+                    service_type: 'Commercial Interior 3D Reality Capture',
+                    project_scope: 'Package 02: As-Built CAD / BIM Package',
                     message: ''
                 },
 
                 initApp() {
-                    const saved = localStorage.getItem('ias_services_v4');
+                    const saved = localStorage.getItem('ias_services_v5');
                     if (saved) {
                         try {
                             this.services = JSON.parse(saved);
@@ -485,6 +757,7 @@
                         }
                     } else {
                         this.services = defaultList;
+                        this.saveStorage();
                     }
 
                     if (window.location.hash === '#admin') {
@@ -505,14 +778,9 @@
                     }, 50);
                 },
 
-                toggleAdmin() {
-                    if (this.page === 'admin') {
-                        this.goToHome();
-                    } else {
-                        this.page = 'admin';
-                        window.location.hash = 'admin';
-                        this.refreshIcons();
-                    }
+                selectPackage(pkgName) {
+                    this.formData.project_scope = pkgName;
+                    this.scrollToContact();
                 },
 
                 scrollToContact() {
@@ -520,6 +788,7 @@
                     const el = document.getElementById('contact');
                     if (el) el.scrollIntoView({ behavior: 'smooth' });
                 },
+                
                 goToHome() {
                     this.page = 'home';
                     history.pushState("", document.title, window.location.pathname);
@@ -581,13 +850,13 @@
                         desc: this.newService.desc,
                         icon: this.newService.icon
                     });
-                    this.newService = { title: '', desc: '', icon: 'Flame' };
+                    this.newService = { title: '', desc: '', icon: 'Scan' };
                     this.saveStorage();
                     this.refreshIcons();
                 },
 
                 resetToDefaults() {
-                    if (confirm('Reset to default services including Thermal Imaging?')) {
+                    if (confirm('Reset to default services including 3D Reality Capture?')) {
                         this.services = [...defaultList];
                         this.saveStorage();
                         this.refreshIcons();
@@ -595,7 +864,7 @@
                 },
 
                 saveStorage() {
-                    localStorage.setItem('ias_services_v4', JSON.stringify(this.services));
+                    localStorage.setItem('ias_services_v5', JSON.stringify(this.services));
                 },
 
                 submitContactForm() {
@@ -616,7 +885,8 @@
                         this.formData = {
                             name: '',
                             email: '',
-                            service_type: 'Thermal Imaging & Radiometrics',
+                            service_type: 'Commercial Interior 3D Reality Capture',
+                            project_scope: 'Package 02: As-Built CAD / BIM Package',
                             message: ''
                         };
                         this.refreshIcons();
@@ -647,16 +917,16 @@
             </div>
             <div class="p-6 overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
                 <p><strong class="text-white">Effective Date:</strong> January 2026</p>
-                <p>Insight Aerial Solutions LLC ("we", "our", or "us") respects client confidentiality and individual privacy across all digital and aerial operations.</p>
+                <p>Insight Aerial Solutions LLC ("we", "our", or "us") respects client confidentiality and individual privacy across all digital, aerial, and terrestrial spatial operations.</p>
                 
                 <h4 class="font-semibold text-white pt-2">1. Information Collected</h4>
-                <p>We collect contact information (names, corporate emails, telephone numbers, and site addresses) submitted voluntarily via our quote intake forms. We do not sell, rent, or distribute personal or corporate information to third parties.</p>
+                <p>We collect contact information (names, corporate emails, telephone numbers, and site addresses) submitted voluntarily via our quote intake forms. We do not sell, rent, or distribute corporate information to third parties.</p>
 
-                <h4 class="font-semibold text-white pt-2">2. Aerial Operations & Incidental Capture</h4>
-                <p>All flight operations are conducted strictly within FAA Part 107 safety regulations and targeted boundaries authorized by the client. Flight paths are planned to minimize incidental visual capture of adjacent private properties. Any uncontracted identifiable personal data inadvertently captured during data collection is excluded from final deliverables.</p>
+                <h4 class="font-semibold text-white pt-2">2. Spatial Operations & Incidental Capture</h4>
+                <p>All flight and interior capture operations are conducted strictly within client-authorized boundaries. Sensitive visual data (monitors, proprietary trade assets, or individual identifiers) inadvertently recorded during scanning can be digitally blurred upon client request.</p>
 
-                <h4 class="font-semibold text-white pt-2">3. Data Retention & Client Ownership</h4>
-                <p>Raw sensor data, orthomosaics, 3D point clouds, and inspection media are retained on secure local storage for client delivery and archival purposes. Deliverables are transferred directly to authorized clients.</p>
+                <h4 class="font-semibold text-white pt-2">3. Data Retention & Archival</h4>
+                <p>Raw point cloud data, E57 files, orthomosaics, and 3D digital twins are stored on secure local and encrypted cloud storage for delivery and ongoing active hosting contracts.</p>
             </div>
             <div class="p-4 border-t border-slate-800 flex justify-end bg-slate-900/50">
                 <button type="button" @click="showPrivacyModal = false" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-semibold transition">Close</button>
@@ -679,37 +949,24 @@
             </div>
             <div class="p-6 overflow-y-auto space-y-4 text-sm text-slate-300 leading-relaxed">
                 <p><strong class="text-white">Effective Date:</strong> January 2026</p>
-                <p>By engaging Insight Aerial Solutions LLC for aerial imaging, data acquisition, or inspection operations, the client agrees to the following operating terms:</p>
+                <p>By engaging Insight Aerial Solutions LLC for aerial imaging, terrestrial 3D laser scanning, or reality capture operations, the client agrees to the following operating terms:</p>
                 
-                <h4 class="font-semibold text-white pt-2">1. FAA Compliance & Airspace Authority</h4>
-                <p>All operations are piloted by an FAA Part 107 Remote Pilot in Command (RPIC). Operations are strictly contingent upon FAA airspace authorizations (LAANC/COA), weather minimums, and site safety evaluations. The RPIC maintains sole and absolute authority to delay, cancel, or reschedule flights to maintain safety and federal compliance.</p>
+                <h4 class="font-semibold text-white pt-2">1. Airspace & Field Authority</h4>
+                <p>All drone operations are piloted by an FAA Part 107 Remote Pilot in Command (RPIC). Operations are strictly contingent upon FAA airspace authorizations, weather minimums, and site safety evaluations. The RPIC maintains sole authority to delay or reschedule flights to maintain safety and federal compliance.</p>
 
                 <h4 class="font-semibold text-white pt-2">2. Site Access & Authorization</h4>
-                <p>Clients warrant that they own or have obtained legal permission and physical authorization to access the subject property and fly the airspace overhead for the requested scope of work.</p>
+                <p>Clients warrant that they own or have obtained legal permission and physical authorization to access the subject property and scan interior/exterior spaces for the requested scope of work.</p>
 
-                <h4 class="font-semibold text-white pt-2">3. Geospatial & Boundary Disclaimer</h4>
-                <p>Aerial photogrammetry, 2D orthomosaic maps, digital elevation models, and 3D point clouds provided by Insight Aerial Solutions LLC are visual and relative spatial data deliverables engineered for visual analysis, planning, and progress tracking. They do not constitute certified legal boundary surveys or engineering stamped deliverables unless verified by a state-licensed surveyor or professional engineer.</p>
+                <h4 class="font-semibold text-white pt-2">3. Dimensional & Boundary Disclaimer</h4>
+                <p>Spatial models, 3D point clouds (.E57, .XYZ), 2D schematic floor plans, and aerial orthomosaics provided by Insight Aerial Solutions LLC are high-precision visual and relative spatial data deliverables engineered for design planning, estimating, and progress tracking. They do not constitute certified legal boundary surveys or engineering stamped deliverables unless verified by a state-licensed surveyor or registered professional engineer.</p>
 
-                <h4 class="font-semibold text-white pt-2">4. Weather & Rescheduling</h4>
-                <p>Flights postponed due to severe wind, precipitation, low cloud ceilings, or temporary airspace restrictions (TFRs) will be rescheduled for the earliest mutually viable weather window at no penalty.</p>
+                <h4 class="font-semibold text-white pt-2">4. Digital Twin Hosting Schedule</h4>
+                <p>Standard reality capture projects include six (6) months of active cloud hosting from the date of delivery. Continued hosting thereafter is available under monthly or annual renewal agreements; unrenewed models are securely archived.</p>
             </div>
             <div class="p-4 border-t border-slate-800 flex justify-end bg-slate-900/50">
                 <button type="button" @click="showTermsModal = false" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-semibold transition">Close</button>
             </div>
         </div>
     </div>
-
-
-<script>
-window.jumpToContact = function(e) {
-    if (e) e.preventDefault();
-    const el = document.getElementById('contact');
-    if (el) {
-        const y = el.getBoundingClientRect().top + window.scrollY - 70;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-};
-</script>
-
 </body>
 </html>
